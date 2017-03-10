@@ -1,0 +1,170 @@
+html{
+	height:100%;
+}
+
+body{
+	background-image: url("../images/rainforestbackground.jpg");
+	background-repeat: no-repeat;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+#container{
+	margin: 0px auto;
+	padding: 10px;
+	clear:left;
+	font-size: 120%;
+	font-family: "Berlin Sans FB", Times, serif;
+	background-color: #FFFFFF;
+	border: solid;
+}
+
+header img{
+	margin-left: 60px;
+}
+
+
+#mainlinks{
+	padding: 10px;
+}
+
+#mainlinks a {
+	text-decoration: none;
+}
+
+#mainlinks li{
+	float: left;
+	margin-left: 150px;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+	clear:both;
+	background-color: white;
+	font-family: "Berlin Sans FB", Times, serif;
+	font-size: 120%;
+  position: absolute;
+}
+
+#sociallinks li{
+  float:left;
+  list-style-type: none;
+  margin-left: 100px;
+}
+
+audio {
+  margin-left: 500px;
+}
+
+
+/*----------------------------------- SLIDE SHOW CSS ---------------------------------------------------------*/
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  padding-top: 10px;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+.text {
+  color: white;
+  font-size: 25px;
+  padding: 20px 12px;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  text-align: center;
+  font-family: "Berlin Sans FB", Times, serif;
+}
+
+
+.numbertext {
+  color: white;
+  font-size: 25px;
+  font-family: "Berlin Sans FB", Times, serif;
+  padding: 20px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor:pointer;
+  height: 18px;
+  width: 18px;
+  margin: 0 2px;
+  background-color: #7A340D;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  padding: 5px;
+  border: solid;
+}
+
+.active, .dot:hover {
+  background-color: #291104;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/*---------------------------------------------Media Queries for Responsive Design-------------------------------*/
+
+@media screen and (max-width:959px) {
+  #container{
+    width:100%;
+    }
+}
+
+@media screen and (max-width:640px){
+  #container{
+    width:100%;
+  }
+}
+
+@media screen and (max-width:480px){
+  #container{
+    width:100%;
+  }
+}
